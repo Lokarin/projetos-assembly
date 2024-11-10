@@ -24,6 +24,11 @@
 	A: .word 5, 8, 2, 10, 3, 7, 1, 9, 4, 6, 15, 12, 11, 14, 13, 16, 19, 17, 18, 20
 
 .text
+	##Introducao
+	print_str("Aluno: Henrique Amaral Onuki\n")
+	print_str("Questão 2: Operações em vetor.\n\n")
+	print_str("Este progama deve realizar operações em um vetor através de loops e retornar os resultados.\n\n")
+
 	##Load s0 com A
 	la $s0, A
 	
@@ -81,5 +86,8 @@
     		
     		print_str("\nA diferença entre o maior e menor numero é: ")
     		print_int($t7)
+    		
+    		print_str("\nA soma de todos os valores no vetor é: ")
+    		print_int($s1)
     		
     		exit()
